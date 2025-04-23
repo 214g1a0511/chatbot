@@ -50,11 +50,11 @@ def ask_question(content, question):
     prompt = f"""
 You are an intelligent assistant helping the user understand the background verification process. 
 
-Answer the user's questions based on the information provided in the uploaded document, but focus specifically on the background verification process.
+The user may ask questions related to the background verification process, and you should answer based on the content provided. Do not refer to any document directly. Just explain the background verification process using the information available.
 
---- BEGIN BACKGROUND VERIFICATION INFORMATION ---
+--- BEGIN CONTENT ---
 {content}
---- END BACKGROUND VERIFICATION INFORMATION ---
+--- END CONTENT ---
 
 User Question: {question}
 """
@@ -105,6 +105,5 @@ def home():
     return "<h2>📄 Document Q&A API is Running</h2>"
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
+    # Use environment variable PORT for dynamic port binding
+    app.run(host="0.0.0.0", port=5000)
