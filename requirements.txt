@@ -5,3 +5,4 @@ together
 python-docx
 PyMuPDF
 python-dotenv
+gunicorn
