@@ -110,5 +110,5 @@ def home():
 
 if __name__ == "__main__":
     # Render will provide the port number via the environment variable "PORT"
-    port = int(os.getenv("PORT", 5000))  # Default to 5000 if not set
+    port = int(os.getenv("PORT"))  # Default to 5000 if not set
     app.run(host="0.0.0.0", port=port)
