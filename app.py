@@ -104,6 +104,11 @@ def handle_question():
 def home():
     return "<h2>📄 Document Q&A API is Running</h2>"
 
+# if __name__ == "__main__":
+#     # Use environment variable PORT for dynamic port binding
+#     app.run(host="0.0.0.0", port=5000)
+
 if __name__ == "__main__":
-    # Use environment variable PORT for dynamic port binding
-    app.run(host="0.0.0.0", port=5000)
+    # Render will provide the port number via the environment variable "PORT"
+    port = int(os.getenv("PORT", 5000))  # Default to 5000 if not set
+    app.run(host="0.0.0.0", port=port)
