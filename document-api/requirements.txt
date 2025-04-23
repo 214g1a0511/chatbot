@@ -1,0 +1,8 @@
+flask
+transformers
+torch
+together
+PyMuPDF
+python-docx
+python-dotenv
+
