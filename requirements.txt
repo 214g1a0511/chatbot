@@ -1,8 +1,7 @@
-flask
+Flask
 transformers
 torch
 together
-PyMuPDF
 python-docx
+PyMuPDF
 python-dotenv
-
