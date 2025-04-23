@@ -6,3 +6,4 @@ python-docx
 PyMuPDF
 python-dotenv
 gunicorn
+huggingface_hub[hf_xet]
