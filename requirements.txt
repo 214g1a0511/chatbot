@@ -8,4 +8,4 @@ python-dotenv
 gunicorn
 huggingface_hub[hf_xet]
 googletrans==4.0.0-rc1
- langdetect
+langdetect
